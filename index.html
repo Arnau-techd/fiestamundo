@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101322">
+<meta name="description" content="FiestaMundo: calendario de fiestas, tradiciones, días internacionales y celebraciones de España y del mundo. Descubre qué se celebra, cuándo y dónde.">
+<meta name="keywords" content="calendario de fiestas, festivos, Navidad, Semana Santa, Halloween, fiestas del mundo, días internacionales, celebraciones">
+<meta property="og:title" content="FiestaMundo — Descubre qué se celebra">
+<meta property="og:description" content="Todas las fechas especiales en un calendario moderno: fiestas, tradiciones y celebraciones de todo el mundo.">
+<meta property="og:type" content="website">
+<title>FiestaMundo — Calendario mundial de celebraciones</title>
+<style>
+:root{color-scheme:dark;--bg:#0b0d18;--surface:#121626;--surface2:#191f33;--surface3:#202741;--text:#f5f6ff;--muted:#a9b1c9;--line:#2b3450;--purple:#b7a4ff;--cyan:#72e6e6;--pink:#ff9dc8;--green:#9ce8bd;--radius:20px;--shadow:0 18px 50px #0003}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 12% -8%,#3c2c66 0,transparent 35%),radial-gradient(ellipse at 95% 10%,#123c48 0,transparent 28%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.55}button,input,select{font:inherit}button{cursor:pointer}a{color:inherit}.container{width:min(1160px,92%);margin:auto}.topbar{border-bottom:1px solid #ffffff12;background:#0b0d18c9;backdrop-filter:blur(16px);position:sticky;top:0;z-index:20}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:1.25rem;font-weight:900;letter-spacing:-.05em}.brandmark{width:40px;height:40px;border-radius:14px;display:grid;place-items:center;color:#101322;font-size:1.4rem;background:linear-gradient(135deg,var(--purple),var(--cyan));box-shadow:0 5px 25px #9b8aff33}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:.9rem}.navlinks a{text-decoration:none}.navlinks a:hover{color:var(--text)}.navright{display:flex;gap:8px;align-items:center}.iconbtn{border:1px solid var(--line);background:var(--surface);color:var(--text);border-radius:12px;padding:9px 12px}.hero{padding:68px 0 32px;display:grid;grid-template-columns:1.35fr .65fr;gap:36px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);font-size:.76rem;text-transform:uppercase;letter-spacing:.16em;font-weight:850}.eyebrow:before{content:"";height:7px;width:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 15px var(--cyan)}h1{font-size:clamp(2.7rem,6.5vw,5.6rem);line-height:.98;letter-spacing:-.075em;margin:18px 0 20px}h1 span{background:linear-gradient(90deg,var(--purple),var(--cyan));color:transparent;background-clip:text;-webkit-background-clip:text}.hero-copy{font-size:1.08rem;color:var(--muted);max-width:680px}.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:13px;border:1px solid var(--line);padding:12px 16px;background:var(--surface);color:var(--text);font-weight:800;text-decoration:none;transition:transform .16s,border-color .16s}.btn:hover{transform:translateY(-2px);border-color:#7770b4}.btn.primary{background:linear-gradient(110deg,#c2b3ff,#7be6e6);color:#111323;border:0}.hero-art{min-height:310px;position:relative;display:grid;place-items:center}.orbit{width:275px;height:275px;border:1px solid #b7a4ff55;border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 90px #a78bfa13,inset 0 0 70px #72e6e610}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #72e6e633;border-radius:50%;inset:25px}.orbit:after{inset:53px;border-color:#ff9dc833}.planet{width:132px;height:132px;border-radius:42px;display:grid;place-items:center;font-size:4rem;transform:rotate(-8deg);background:linear-gradient(145deg,#c2b3ff,#73e8e4);box-shadow:0 20px 60px #8b82ff35}.float{position:absolute;padding:10px 13px;background:#191f33;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);font-size:.87rem;font-weight:800}.float.one{top:20px;right:0}.float.two{bottom:32px;left:0}.float.three{bottom:12px;right:8px}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:10px 0 42px}.summary-card{border:1px solid var(--line);background:#121626c9;border-radius:17px;padding:17px}.summary-card strong{font-size:1.65rem;display:block;letter-spacing:-.05em}.summary-card span{font-size:.82rem;color:var(--muted)}section{margin:42px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:18px}.section-head h2{font-size:clamp(1.5rem,3vw,2.1rem);letter-spacing:-.05em;margin:0}.section-head p{color:var(--muted);margin:5px 0 0}.text-link{color:var(--cyan);font-size:.88rem;font-weight:800;text-decoration:none}.next-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:15px}.next-main{border:1px solid #5b528b;background:linear-gradient(130deg,#282044,#141b2e 80%);border-radius:var(--radius);padding:25px;display:flex;flex-direction:column;justify-content:space-between;min-height:240px;overflow:hidden;position:relative}.next-main:after{content:"✦";position:absolute;font-size:13rem;right:-15px;bottom:-85px;color:#c3b5ff0d;line-height:1}.next-label{font-size:.75rem;color:var(--purple);font-weight:900;text-transform:uppercase;letter-spacing:.12em}.next-main h3{font-size:2rem;letter-spacing:-.05em;margin:12px 0 8px}.next-main p{color:var(--muted);max-width:500px;margin:0}.next-date{font-size:.9rem;font-weight:800;margin-top:22px}.next-side{display:grid;gap:12px}.mini-event{display:flex;align-items:center;gap:15px;padding:16px;border:1px solid var(--line);background:var(--surface);border-radius:17px}.mini-emoji{width:52px;height:52px;border-radius:16px;background:var(--surface3);display:grid;place-items:center;font-size:1.8rem;flex-shrink:0}.mini-event h4{margin:0;font-size:1rem}.mini-event p{margin:3px 0 0;color:var(--muted);font-size:.82rem}.date-small{margin-left:auto;text-align:right;color:var(--cyan);font-size:.78rem;font-weight:850;white-space:nowrap}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.quick{padding:17px;border:1px solid var(--line);border-radius:17px;background:var(--surface);text-align:left;color:var(--text);transition:transform .15s,border-color .15s}.quick:hover{transform:translateY(-3px);border-color:#6c6b9c}.quick .qemoji{font-size:1.7rem;display:block;margin-bottom:10px}.quick strong{display:block}.quick span:last-child{font-size:.8rem;color:var(--muted)}.toolbar{display:grid;grid-template-columns:1.5fr .75fr .8fr .8fr;gap:10px;margin:20px 0 15px}.field{width:100%;background:#111626;border:1px solid var(--line);border-radius:13px;padding:12px 13px;color:var(--text);outline:none;min-width:0}.field:focus{border-color:var(--purple);box-shadow:0 0 0 3px #b7a4ff16}.field option{background:#111626}.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 20px}.chip{border:1px solid var(--line);border-radius:99px;background:transparent;color:var(--muted);padding:8px 13px;font-size:.82rem;font-weight:750}.chip.active,.chip:hover{background:#282342;color:#e9e3ff;border-color:#7163a8}.resultline{color:var(--muted);font-size:.86rem;margin:0 0 14px;display:flex;justify-content:space-between;gap:10px}.events-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.event{background:linear-gradient(145deg,#171e32,#111626 80%);border:1px solid var(--line);border-radius:19px;padding:18px;display:flex;flex-direction:column;min-height:250px;transition:transform .18s,border-color .18s;position:relative;overflow:hidden}.event:hover{transform:translateY(-3px);border-color:#696a98}.event-top{display:flex;justify-content:space-between;align-items:start;gap:10px}.event-emoji{font-size:2rem}.event-date{font-size:.75rem;padding:5px 9px;border:1px solid #4d4779;background:#25213e;border-radius:99px;color:#dcd4ff;white-space:nowrap}.event h3{font-size:1.12rem;letter-spacing:-.025em;margin:15px 0 6px;line-height:1.25}.event p{font-size:.86rem;color:var(--muted);margin:0 0 17px}.event-bottom{display:flex;align-items:end;justify-content:space-between;gap:8px;margin-top:auto}.tags{display:flex;flex-wrap:wrap;gap:6px}.tag{font-size:.68rem;padding:4px 8px;border-radius:99px;background:#14303a;color:#a5f4f0;border:1px solid #24535c}.tag.purple{background:#292342;color:#d7cbff;border-color:#514477}.details-btn{border:1px solid var(--line);background:transparent;color:var(--text);padding:7px 10px;border-radius:10px;font-size:.75rem;font-weight:800;white-space:nowrap}.details-btn:hover{border-color:var(--cyan)}.empty{grid-column:1/-1;border:1px dashed var(--line);padding:50px 15px;text-align:center;border-radius:18px;color:var(--muted)}.month-list{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.month{background:var(--surface);border:1px solid var(--line);border-radius:15px;padding:14px 10px;color:var(--text);text-align:center}.month:hover,.month.selected{border-color:var(--purple);background:#211e39}.month b{display:block;font-size:.91rem}.month span{font-size:.75rem;color:var(--muted)}.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.guide{border:1px solid var(--line);border-radius:18px;background:var(--surface);padding:20px}.guide-icon{font-size:1.9rem}.guide h3{margin:12px 0 6px;font-size:1.08rem}.guide p{font-size:.86rem;color:var(--muted);margin:0 0 14px}.guide button{border:0;padding:0;background:transparent;color:var(--cyan);font-weight:850}.notice{padding:17px 19px;border:1px solid #3c4968;background:#141a2c;border-radius:16px;color:var(--muted);font-size:.87rem}.notice strong{color:var(--text)}.faq{display:grid;grid-template-columns:1fr 1fr;gap:10px}.faq details{border:1px solid var(--line);border-radius:15px;background:var(--surface);padding:15px 17px}.faq summary{cursor:pointer;font-weight:800}.faq details p{color:var(--muted);font-size:.88rem;margin-bottom:0}.newsletter{padding:26px;border:1px solid #4d4779;background:linear-gradient(120deg,#24203e,#141b2d);border-radius:22px;display:flex;justify-content:space-between;align-items:center;gap:22px}.newsletter h2{margin:0;font-size:1.5rem;letter-spacing:-.04em}.newsletter p{color:var(--muted);margin:6px 0 0;font-size:.88rem}.newsletter-actions{display:flex;gap:8px;flex-shrink:0}.footer{border-top:1px solid var(--line);padding:26px 0 38px;margin-top:55px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:.82rem}.footer a{color:var(--cyan);text-decoration:none}.footer-links{display:flex;gap:16px;flex-wrap:wrap}.modal-backdrop{position:fixed;inset:0;background:#050610c9;z-index:50;display:none;align-items:center;justify-content:center;padding:20px}.modal-backdrop.open{display:flex}.modal{width:min(570px,100%);max-height:88vh;overflow:auto;background:#151b2d;border:1px solid #3a4566;border-radius:23px;padding:25px;box-shadow:var(--shadow)}.modal-head{display:flex;justify-content:space-between;align-items:start;gap:12px}.modal-emoji{font-size:3rem}.modal h2{margin:8px 0;font-size:1.8rem;letter-spacing:-.05em}.modal p{color:var(--muted)}.modal-close{border:1px solid var(--line);background:var(--surface2);color:var(--text);border-radius:11px;padding:8px 11px}.modal-meta{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.modal-meta span{border:1px solid var(--line);border-radius:99px;padding:6px 10px;font-size:.8rem;color:var(--cyan)}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#e5fff7;color:#10251f;padding:11px 17px;border-radius:12px;font-size:.87rem;font-weight:800;display:none;z-index:70;box-shadow:var(--shadow)}.toast.show{display:block}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-art{display:none}.summary{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.events-grid{grid-template-columns:repeat(2,1fr)}.quick-grid{grid-template-columns:repeat(2,1fr)}.next-layout{grid-template-columns:1fr}.month-list{grid-template-columns:repeat(4,1fr)}.guide-grid{grid-template-columns:1fr 1fr}.navlinks{gap:12px}}
+@media(max-width:600px){.nav{height:64px}.navlinks{display:none}.hero{padding:43px 0 24px}.summary{gap:8px}.summary-card{padding:13px}.summary-card strong{font-size:1.4rem}.toolbar{grid-template-columns:1fr}.events-grid,.guide-grid,.faq{grid-template-columns:1fr}.quick-grid{grid-template-columns:repeat(2,1fr)}.month-list{grid-template-columns:repeat(3,1fr)}.section-head{align-items:start;flex-direction:column}.newsletter{align-items:start;flex-direction:column}.newsletter-actions{width:100%;flex-wrap:wrap}.newsletter-actions .btn{flex:1}.resultline{flex-direction:column}.event{min-height:230px}.date-small{font-size:.72rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="container nav">
+ <a class="brand" href="#" aria-label="FiestaMundo, inicio"><span class="brandmark">✦</span> FiestaMundo</a>
+ <nav class="navlinks" aria-label="Principal"><a href="#proximas">Próximas</a><a href="#explorar">Calendario</a><a href="#meses">Por meses</a><a href="#guias">Guías</a></nav>
+ <div class="navright"><button class="iconbtn" id="shareBtn" aria-label="Compartir página" title="Compartir">↗ <span class="shareword">Compartir</span></button></div>
+</div></div>
+<header class="container">
+ <div class="hero">
+  <div><div class="eyebrow">Un calendario, miles de historias</div>
+   <h1>Siempre hay algo<br>que <span>celebrar.</span></h1>
+   <p class="hero-copy">Descubre fiestas populares, tradiciones culturales, días internacionales y fechas especiales de España y de todo el mundo. Encuentra qué se celebra, cuándo y dónde.</p>
+   <div class="actions"><a class="btn primary" href="#explorar">✦ Explorar celebraciones</a><button class="btn" id="nextBtn">Ver la próxima fiesta ↗</button></div>
+  </div>
+  <div class="hero-art" aria-hidden="true"><div class="orbit"><div class="planet">🎉</div></div><div class="float one">🌍 De todo el mundo</div><div class="float two">🎄 Tradiciones</div><div class="float three">📅 Todo el año</div></div>
+ </div>
+ <div class="summary">
+  <div class="summary-card"><strong id="totalCount">—</strong><span>celebraciones en el calendario</span></div>
+  <div class="summary-card"><strong id="yearStat">—</strong><span>año que estás consultando</span></div>
+  <div class="summary-card"><strong>12</strong><span>meses para explorar</span></div>
+  <div class="summary-card"><strong>🌐 Global</strong><span>culturas y países</span></div>
+ </div>
+</header>
+<main class="container">
+ <section id="proximas">
+  <div class="section-head"><div><h2>Lo próximo que se celebra</h2><p>Una pequeña selección de las fechas que vienen.</p></div><a class="text-link" href="#explorar">Ver todo el calendario →</a></div>
+  <div class="next-layout"><article class="next-main" id="nextFeature"><div><div class="next-label">Próxima celebración</div><h3>Buscando la próxima fiesta…</h3><p>Un momento, estamos preparando tu calendario.</p></div><div class="next-date"></div></article><div class="next-side" id="nextSide"></div></div>
+ </section>
+ <section>
+  <div class="section-head"><div><h2>Explora por categoría</h2><p>Elige un tema y encuentra celebraciones relacionadas.</p></div></div>
+  <div class="quick-grid">
+   <button class="quick" data-category="Festividad"><span class="qemoji">🎄</span><strong>Fiestas populares</strong><span>Navidad, Pascua y más</span></button>
+   <button class="quick" data-category="Cultura"><span class="qemoji">🎭</span><strong>Cultura y tradición</strong><span>Costumbres de cada lugar</span></button>
+   <button class="quick" data-category="Internacional"><span class="qemoji">🌍</span><strong>Días internacionales</strong><span>Fechas para tomar conciencia</span></button>
+   <button class="quick" data-category="Estacional"><span class="qemoji">🌸</span><strong>Estaciones del año</strong><span>Solsticios y equinoccios</span></button>
+  </div>
+ </section>
+ <section id="explorar">
+  <div class="section-head"><div><h2>Calendario de celebraciones</h2><p>Busca por nombre, mes, categoría o lugar.</p></div><button class="btn" id="resetBtn">↺ Reiniciar filtros</button></div>
+  <div class="toolbar">
+   <input class="field" id="search" type="search" placeholder="🔎  Ej. Halloween, Japón, música…" aria-label="Buscar celebraciones">
+   <select class="field" id="monthFilter" aria-label="Filtrar por mes"><option value="">Todos los meses</option></select>
+   <select class="field" id="categoryFilter" aria-label="Filtrar por categoría"><option value="">Todas las categorías</option><option>Festividad</option><option>Cultura</option><option>Internacional</option><option>Estacional</option><option>Comercial</option><option>Deporte</option></select>
+   <select class="field" id="sortFilter" aria-label="Ordenar fechas"><option value="upcoming">Próximas primero</option><option value="calendar">Orden del calendario</option><option value="name">Nombre A–Z</option></select>
+  </div>
+  <div class="chips" id="regionChips"><button class="chip active" data-region="">Todos los lugares</button><button class="chip" data-region="España">🇪🇸 España</button><button class="chip" data-region="Europa">🇪🇺 Europa</button><button class="chip" data-region="América">🌎 América</button><button class="chip" data-region="Asia">🌏 Asia</button><button class="chip" data-region="Mundial">🌍 Mundial</button></div>
+  <div class="resultline"><span id="resultText" aria-live="polite"></span><span id="dateRange"></span></div>
+  <div class="events-grid" id="eventsGrid"></div>
+  <div class="actions" style="justify-content:center;margin-top:22px"><button class="btn" id="showMoreBtn">Mostrar más celebraciones ↓</button></div>
+ </section>
+ <section id="meses">
+  <div class="section-head"><div><h2>Explora los 12 meses</h2><p>Ve directamente a las celebraciones de un mes.</p></div></div>
+  <div class="month-list" id="monthGrid"></div>
+ </section>
+ <section id="guias">
+  <div class="section-head"><div><h2>Guías para descubrir tradiciones</h2><p>Ideas para conocer mejor algunas de las fiestas más conocidas.</p></div></div>
+  <div class="guide-grid">
+   <article class="guide"><div class="guide-icon">🎄</div><h3>Navidad en el mundo</h3><p>Árboles, luces, comidas típicas y formas diferentes de celebrar el 25 de diciembre.</p><button data-guide="navidad">Explorar Navidad →</button></article>
+   <article class="guide"><div class="guide-icon">🐣</div><h3>Semana Santa y Pascua</h3><p>Procesiones, tradiciones familiares y celebraciones cuya fecha cambia cada año.</p><button data-guide="pascua">Explorar Pascua →</button></article>
+   <article class="guide"><div class="guide-icon">🎃</div><h3>Halloween y Día de Muertos</h3><p>Dos celebraciones distintas, con historias, símbolos y costumbres propias.</p><button data-guide="halloween">Explorar octubre y noviembre →</button></article>
+  </div>
+ </section>
+ <section>
+  <div class="section-head"><div><h2>Preguntas frecuentes</h2><p>Lo que debes saber sobre las fechas del calendario.</p></div></div>
+  <div class="faq">
+   <details><summary>¿Las fechas cambian cada año?</summary><p>Algunas son fijas, como Halloween (31 de octubre). Otras, como Carnaval, Semana Santa, Pascua, Ramadán o varias fiestas lunares, dependen de calendarios religiosos o astronómicos y cambian cada año.</p></details>
+   <details><summary>¿Son días festivos oficiales?</summary><p>No necesariamente. Una celebración puede ser popular o internacional sin ser un día no laborable. Los festivos oficiales dependen del país y, a veces, de la comunidad autónoma o municipio.</p></details>
+   <details><summary>¿Incluye fiestas de todos los países?</summary><p>Incluye una selección internacional de celebraciones conocidas. No es un listado exhaustivo de todas las fiestas locales del mundo; se puede ampliar añadiendo eventos al calendario.</p></details>
+   <details><summary>¿Puedo usar la web en el móvil?</summary><p>Sí. El diseño se adapta a móviles, tabletas y ordenadores. No necesita instalar aplicaciones ni cargar datos desde un servidor.</p></details>
+  </div>
+ </section>
+ <section class="notice"><strong>📌 Sobre la precisión de las fechas:</strong> FiestaMundo es una guía informativa de celebraciones populares. Las fiestas móviles y los festivales con fechas oficiales variables pueden necesitar actualización manual. Comprueba siempre las fuentes oficiales del país, ciudad o evento antes de organizar un viaje o plan.</section>
+ <section class="newsletter"><div><h2>¿Tienes una fecha en mente?</h2><p>Busca una fiesta o filtra el calendario para encontrar algo que celebrar.</p></div><div class="newsletter-actions"><a class="btn primary" href="#explorar">Buscar celebraciones</a><button class="btn" id="copyLinkBtn">Copiar enlace</button></div></section>
+</main>
+<footer class="container footer"><div>© <span id="footerYear"></span> FiestaMundo · Celebraciones que conectan culturas.</div><div class="footer-links"><a href="#explorar">Calendario</a><a href="#guias">Guías</a><a href="#top" id="topLink">Volver arriba ↑</a></div></footer>
+<div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div class="modal-head"><div><div class="modal-emoji" id="modalEmoji">🎉</div><h2 id="modalTitle"></h2></div><button class="modal-close" id="closeModal" aria-label="Cerrar detalle">✕</button></div><div class="modal-meta" id="modalMeta"></div><p id="modalDescription"></p><p id="modalExtra"></p><div class="actions"><button class="btn primary" id="addCalendarBtn">＋ Añadir a mi calendario</button><button class="btn" id="shareEventBtn">↗ Compartir fiesta</button></div></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script>
+"use strict";
+const MONTHS=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+const today=new Date(); today.setHours(0,0,0,0);
+const currentYear=today.getFullYear();
+let selectedRegion="", visibleLimit=9, selectedEvent=null;
+const $=id=>document.getElementById(id);
+$("yearStat").textContent=currentYear; $("footerYear").textContent=currentYear;
+MONTHS.forEach((m,i)=>{const o=document.createElement("option");o.value=i;o.textContent=m;$("monthFilter").appendChild(o);});
+function fixed(y,m,d){return new Date(y,m-1,d)}
+function addDays(d,n){const x=new Date(d);x.setDate(x.getDate()+n);return x}
+function easterDate(y){const a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,m=Math.floor((a+11*h+22*l)/451);return new Date(y,Math.floor((h+l-7*m+114)/31)-1,((h+l-7*m+114)%31)+1)}
+function nthWeekday(y,month,weekday,n){const d=new Date(y,month-1,1);return addDays(d,(7+weekday-d.getDay())%7+7*(n-1))}
+function lastWeekday(y,month,weekday){const d=new Date(y,month,0);return addDays(d,-((7+d.getDay()-weekday)%7))}
+function event(name,date,emoji,category,places,region,description,tradition,variable=false){return {name,date,emoji,category,places,region,description,tradition,variable}}
+function buildEvents(y){
+ const easter=easterDate(y), palm=addDays(easter,-7), goodFriday=addDays(easter,-2), easterMonday=addDays(easter,1), carnival=addDays(easter,-47);
+ const spring=new Date(y,2,20), summer=new Date(y,5,21), autumn=new Date(y,8,22), winter=new Date(y,11,21);
+ const E=[
+ event("Año Nuevo",fixed(y,1,1),"🎆","Festividad","Muchos países","Mundial","El primer día del año gregoriano se celebra con reuniones, fuegos artificiales y nuevos propósitos.","Las tradiciones varían: desde las campanadas hasta comidas simbólicas para atraer buena suerte."),
+ event("Día de Reyes",fixed(y,1,6),"👑","Festividad","España y otros países","España","Celebración de la llegada de los Reyes Magos, muy popular en España.","Cabalgatas, regalos y el tradicional roscón de Reyes."),
+ event("Año Nuevo lunar",fixed(y,2,17),"🧧","Cultura","China y comunidades de Asia oriental","Asia","Celebración del nuevo año según calendarios lunisolares en distintas culturas asiáticas.","Las fechas cambian cada año; esta fecha es orientativa y debe verificarse para el año consultado.",true),
+ event("Día de la Marmota",fixed(y,2,2),"🐿️","Cultura","Estados Unidos y Canadá","América","Tradición popular que intenta predecir cuánto durará el invierno.","Se celebra especialmente en Punxsutawney, Pensilvania."),
+ event("San Valentín",fixed(y,2,14),"💌","Comercial","Muchos países","Mundial","Fecha asociada al amor y la amistad, celebrada de distintas maneras.","Tarjetas, flores, pequeños regalos y planes con personas queridas."),
+ event("Carnaval",carnival,"🎭","Cultura","Brasil, España y muchos países","Mundial","Periodo de desfiles, disfraces y música antes de la Cuaresma.","Las fechas principales se calculan en relación con el Domingo de Pascua.",true),
+ event("Día Internacional de la Mujer",fixed(y,3,8),"💜","Internacional","Mundial","Mundial","Jornada para reconocer los derechos de las mujeres y avanzar hacia la igualdad.","En muchas ciudades se celebran actos, actividades educativas y manifestaciones."),
+ event("Día de San Patricio",fixed(y,3,17),"☘️","Cultura","Irlanda y otros países","Europa","Fiesta vinculada a la cultura irlandesa que se ha extendido internacionalmente.","Desfiles, música tradicional y prendas verdes."),
+ event("Equinoccio de primavera",spring,"🌷","Estacional","Hemisferio norte","Mundial","Momento astronómico que marca el comienzo de la primavera en el hemisferio norte.","La fecha exacta puede variar ligeramente según el año y la zona horaria.",true),
+ event("Holi",fixed(y,3,14),"🎨","Cultura","India y Nepal","Asia","Festival de colores que celebra la llegada de la primavera en varias tradiciones del sur de Asia.","La fecha depende del calendario lunar hindú; confirma la fecha anual.",true),
+ event("Domingo de Ramos",palm,"🌿","Festividad","Tradición cristiana","Mundial","Día que abre la Semana Santa en el calendario cristiano.","Las celebraciones y procesiones dependen de cada localidad.",true),
+ event("Viernes Santo",goodFriday,"✝️","Festividad","Muchos países","Mundial","Conmemoración cristiana dentro de la Semana Santa.","Es festivo oficial en algunos países y regiones, pero no en todos.",true),
+ event("Domingo de Pascua",easter,"🐣","Festividad","Muchos países","Mundial","Celebración cristiana de la resurrección de Jesús y fiesta familiar en distintas culturas.","Huevos de Pascua, comidas especiales y actividades infantiles en algunos lugares.",true),
+ event("Lunes de Pascua",easterMonday,"🐰","Festividad","Cataluña y otras regiones","España","Día festivo en algunos territorios y tradición de reuniones familiares.","En Cataluña es habitual la mona de Pascua.",true),
+ event("Día de la Tierra",fixed(y,4,22),"🌎","Internacional","Mundial","Mundial","Jornada dedicada a la protección del planeta y la conciencia medioambiental.","Escuelas, organizaciones y comunidades impulsan actividades ambientales."),
+ event("Día del Trabajo",fixed(y,5,1),"✊","Internacional","Muchos países","Mundial","Jornada relacionada con los derechos laborales y el movimiento obrero.","Su reconocimiento como festivo varía por país."),
+ event("Día de Star Wars",fixed(y,5,4),"🚀","Cultura","Comunidad fan mundial","Mundial","Día popular de los seguidores de la saga Star Wars.","La fecha juega con la frase inglesa «May the Force be with you»."),
+ event("Día de la Madre",nthWeekday(y,5,0,1),"💐","Festividad","España y otros países","España","En España se celebra el primer domingo de mayo.","En otros países la fecha puede ser distinta.",true),
+ event("Día Mundial del Medio Ambiente",fixed(y,6,5),"🌱","Internacional","Mundial","Mundial","Fecha para promover la protección de la naturaleza y la acción ambiental.","Cada año puede centrarse en un tema específico."),
+ event("Noche de San Juan",fixed(y,6,23),"🔥","Cultura","Cataluña, España y otros lugares","España","Celebración alrededor del solsticio de verano, con tradiciones locales.","En Cataluña son típicas las hogueras, los petardos y la coca de Sant Joan."),
+ event("Solsticio de verano",summer,"☀️","Estacional","Hemisferio norte","Mundial","Marca el día con más horas de luz del año en el hemisferio norte, aproximadamente.","La fecha astronómica exacta cambia ligeramente.",true),
+ event("Orgullo LGTBIQ+",fixed(y,6,28),"🏳️‍🌈","Internacional","Muchos países","Mundial","Jornada vinculada a la igualdad, la diversidad y los derechos LGTBIQ+.","Desfiles y eventos se organizan en fechas diferentes según cada ciudad."),
+ event("Día de Canadá",fixed(y,7,1),"🍁","Cultura","Canadá","América","Fiesta nacional que conmemora la formación de Canadá.","Conciertos, eventos comunitarios y fuegos artificiales."),
+ event("Día de la Bastilla",fixed(y,7,14),"🇫🇷","Cultura","Francia","Europa","Fiesta nacional francesa vinculada a la Revolución francesa.","Desfiles, actos públicos y celebraciones en muchas ciudades."),
+ event("Día Internacional de la Juventud",fixed(y,8,12),"🌟","Internacional","Mundial","Mundial","Fecha para destacar la participación, las oportunidades y los retos de la juventud.","Se organizan actividades educativas y comunitarias."),
+ event("La Diada",fixed(y,9,11),"🌹","Cultura","Cataluña, España","España","Diada Nacional de Catalunya, con actos institucionales y culturales.","Los actos concretos dependen de cada municipio."),
+ event("Oktoberfest",fixed(y,9,19),"🥨","Cultura","Múnich, Alemania","Europa","Festival popular bávaro conocido por sus carpas, música y tradiciones.","Suele celebrarse entre septiembre y octubre; el inicio cambia cada año.",true),
+ event("Equinoccio de otoño",autumn,"🍂","Estacional","Hemisferio norte","Mundial","Marca el comienzo astronómico del otoño en el hemisferio norte.","La fecha exacta puede variar por zona horaria.",true),
+ event("La Mercè",fixed(y,9,24),"🎉","Cultura","Barcelona, España","España","Fiesta mayor de Barcelona con cultura popular, conciertos y actividades.","Programa y duración varían según el año."),
+ event("Día de Todos los Santos",fixed(y,11,1),"🕯️","Festividad","España y otros países","España","Día de recuerdo y homenaje a los difuntos en varias tradiciones.","En España es habitual visitar cementerios y compartir panellets en Cataluña."),
+ event("Halloween",fixed(y,10,31),"🎃","Festividad","Muchos países","Mundial","Celebración popular con disfraces, calabazas y actividades temáticas.","El truco o trato es una costumbre conocida en varios países."),
+ event("Día de Muertos",fixed(y,11,2),"🌼","Cultura","México","América","Tradición mexicana para recordar y honrar a familiares y seres queridos.","Altares, flores de cempasúchil, fotografías y ofrendas forman parte de la celebración."),
+ event("Diwali",fixed(y,10,20),"🪔","Cultura","India y comunidades del sur de Asia","Asia","Festival de las luces celebrado por varias comunidades religiosas y culturales.","La fecha cambia cada año según el calendario lunisolar; la incluida es orientativa.",true),
+ event("Día de Acción de Gracias",nthWeekday(y,11,4,4),"🦃","Cultura","Estados Unidos","América","Celebración familiar de agradecimiento, observada en Estados Unidos el cuarto jueves de noviembre.","Canadá celebra su propio Thanksgiving en octubre.",true),
+ event("Black Friday",addDays(nthWeekday(y,11,4,4),1),"🛍️","Comercial","Muchos países","Mundial","Jornada comercial de descuentos posterior a Acción de Gracias en Estados Unidos.","Las promociones y fechas pueden variar según las tiendas.",true),
+ event("Día de la Constitución",fixed(y,12,6),"📜","Festividad","España","España","Festivo nacional en España relacionado con la Constitución de 1978."),
+ event("Día de la Inmaculada",fixed(y,12,8),"✨","Festividad","España y otros países","España","Celebración religiosa y festivo en algunos países y territorios."),
+ event("Solsticio de invierno",winter,"❄️","Estacional","Hemisferio norte","Mundial","Marca el día con menos horas de luz del año en el hemisferio norte, aproximadamente.","En el hemisferio sur las estaciones son opuestas.",true),
+ event("Navidad",fixed(y,12,25),"🎄","Festividad","Muchos países","Mundial","Celebración religiosa y cultural con tradiciones familiares diferentes en cada lugar.","Árboles, luces, comidas típicas y regalos son algunas costumbres extendidas."),
+ event("Nochevieja",fixed(y,12,31),"🥂","Festividad","Muchos países","Mundial","La última noche del año, marcada por reuniones y cuenta atrás.","En España es tradicional tomar doce uvas a medianoche.")
+ ];
+ // Ajustes de fecha para algunos eventos lunares aproximados: el aviso de cada ficha lo explica.
+ return E.map((e,i)=>({...e,id:`${y}-${i}`,year:y}));
+}
+let events=buildEvents(currentYear);
+// Also include adjacent years so the calendar works across December/January.
+events=[...buildEvents(currentYear-1),...events,...buildEvents(currentYear+1)];
+function dateKey(d){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`}
+function fmtDate(d,opts={day:"numeric",month:"long"}){return d.toLocaleDateString("es-ES",opts)}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function getFiltered(){
+ const q=$("search").value.trim().toLocaleLowerCase("es"), m=$("monthFilter").value, cat=$("categoryFilter").value, sort=$("sortFilter").value;
+ let list=events.filter(e=>{
+  const searchable=[e.name,e.description,e.places,e.region,e.category,e.tradition].join(" ").toLocaleLowerCase("es");
+  return (!q||searchable.includes(q))&&(m===""||e.date.getMonth()===Number(m))&&(!cat||e.category===cat)&&(!selectedRegion||e.region===selectedRegion||e.places.includes(selectedRegion));
+ });
+ if(sort==="name")list.sort((a,b)=>a.name.localeCompare(b.name,"es"));
+ else if(sort==="calendar")list.sort((a,b)=>a.date-b.date);
+ else list.sort((a,b)=>{const da=a.date>=today?a.date.getTime():a.date.getTime()+365*86400000;const db=b.date>=today?b.date.getTime():b.date.getTime()+365*86400000;return da-db});
+ return list;
+}
+function card(e){
+ const past=e.date<today;
+ return `<article class="event"><div class="event-top"><span class="event-emoji" aria-hidden="true">${e.emoji}</span><span class="event-date">${fmtDate(e.date,{day:"numeric",month:"short",year:"numeric"})}</span></div><h3>${escapeHtml(e.name)}</h3><p>${escapeHtml(e.description)}</p><div class="event-bottom"><div class="tags"><span class="tag">${escapeHtml(e.category)}</span><span class="tag purple">${escapeHtml(e.region)}</span>${e.variable?'<span class="tag">Fecha variable</span>':''}</div><button class="details-btn" data-details="${escapeHtml(e.id)}">Detalles ↗</button></div></article>`;
+}
+function render(){
+ const list=getFiltered(), shown=list.slice(0,visibleLimit);
+ $("totalCount").textContent=events.length; $("resultText").textContent=`${list.length} celebraciones encontradas`; $("dateRange").textContent=`Mostrando ${shown.length} de ${list.length}`;
+ $("eventsGrid").innerHTML=shown.length?shown.map(card).join(""):'<div class="empty">No hay resultados con esos filtros.<br>Prueba con otro nombre, mes o región. ✨</div>';
+ $("showMoreBtn").style.display=list.length>visibleLimit?"inline-flex":"none";
+ renderMonths();
+}
+function renderMonths(){
+ $("monthGrid").innerHTML=MONTHS.map((m,i)=>{const count=events.filter(e=>e.date.getMonth()===i).length;return `<button class="month ${$("monthFilter").value===String(i)?"selected":""}" data-month="${i}"><b>${m}</b><span>${count} fechas en el calendario</span></button>`}).join("");
+}
+function renderUpcoming(){
+ const upcoming=events.filter(e=>e.date>=today).sort((a,b)=>a.date-b.date);
+ const unique=[];const seen=new Set();for(const e of upcoming){if(!seen.has(e.name)){unique.push(e);seen.add(e.name)}if(unique.length===4)break}
+ const feature=unique[0];
+ if(feature){$("nextFeature").innerHTML=`<div><div class="next-label">Próxima celebración</div><h3>${feature.emoji} ${escapeHtml(feature.name)}</h3><p>${escapeHtml(feature.description)}</p></div><div class="next-date">📅 ${fmtDate(feature.date,{weekday:"long",day:"numeric",month:"long",year:"numeric"})} · ${feature.region}</div>`;$("nextFeature").dataset.details=feature.id}
+ $("nextSide").innerHTML=unique.slice(1,4).map(e=>`<div class="mini-event"><div class="mini-emoji">${e.emoji}</div><div><h4>${escapeHtml(e.name)}</h4><p>${escapeHtml(e.region)}</p></div><div class="date-small">${fmtDate(e.date,{day:"numeric",month:"short"})}</div></div>`).join("");
+}
+function showToast(msg){$("toast").textContent=msg;$("toast").classList.add("show");setTimeout(()=>$("toast").classList.remove("show"),2500)}
+function openDetails(id){
+ const e=events.find(x=>x.id===id);if(!e)return;selectedEvent=e;
+ $("modalEmoji").textContent=e.emoji;$("modalTitle").textContent=e.name;
+ $("modalMeta").innerHTML=`<span>📅 ${fmtDate(e.date,{weekday:"long",day:"numeric",month:"long",year:"numeric"})}</span><span>📍 ${escapeHtml(e.places)}</span><span>✦ ${escapeHtml(e.category)}</span>`;
+ $("modalDescription").textContent=e.description;
+ $("modalExtra").textContent=(e.tradition||"")+ (e.variable?" Esta fecha puede cambiar cada año: verifica la fecha oficial antes de planificar.":"");
+ $("modalBackdrop").classList.add("open");$("closeModal").focus();
+}
+function closeModal(){$("modalBackdrop").classList.remove("open")}
+function downloadICS(e){
+ const start=new Date(e.date);const end=addDays(start,1);
+ const stamp=d=>`${d.getUTCFullYear()}${String(d.getUTCMonth()+1).padStart(2,"0")}${String(d.getUTCDate()).padStart(2,"0")}`;
+ const clean=s=>String(s).replace(/([,;\\])/g,"\\$1").replace(/\n/g,"\\n");
+ const content=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//FiestaMundo//ES","CALSCALE:GREGORIAN","BEGIN:VEVENT",`UID:${e.id}@fiestamundo`,`DTSTAMP:${stamp(new Date())}T000000Z`,`DTSTART;VALUE=DATE:${stamp(start)}`,`DTEND;VALUE=DATE:${stamp(end)}`,`SUMMARY:${clean(e.name)}`,`DESCRIPTION:${clean(e.description+" "+(e.tradition||""))}`,`LOCATION:${clean(e.places)}`,"END:VEVENT","END:VCALENDAR"].join("\r\n");
+ const blob=new Blob([content],{type:"text/calendar;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=`${e.name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}.ics`;a.click();URL.revokeObjectURL(url);showToast("Archivo de calendario preparado");
+}
+function resetFilters(){ $("search").value="";$("monthFilter").value="";$("categoryFilter").value="";$("sortFilter").value="upcoming";selectedRegion="";visibleLimit=9;document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("active",!c.dataset.region));render()}
+$("search").addEventListener("input",()=>{visibleLimit=9;render()});
+["monthFilter","categoryFilter","sortFilter"].forEach(id=>$(id).addEventListener("change",()=>{visibleLimit=9;render()}));
+$("regionChips").addEventListener("click",e=>{const b=e.target.closest("[data-region]");if(!b)return;selectedRegion=b.dataset.region;document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("active",c===b));visibleLimit=9;render()});
+$("eventsGrid").addEventListener("click",e=>{const b=e.target.closest("[data-details]");if(b)openDetails(b.dataset.details)});
+$("monthGrid").addEventListener("click",e=>{const b=e.target.closest("[data-month]");if(!b)return;$("monthFilter").value=b.dataset.month;visibleLimit=100;render();$("explorar").scrollIntoView({behavior:"smooth"})});
+$("showMoreBtn").addEventListener("click",()=>{visibleLimit+=9;render()});
+$("resetBtn").addEventListener("click",resetFilters);
+document.querySelectorAll(".quick").forEach(b=>b.addEventListener("click",()=>{$("categoryFilter").value=b.dataset.category;visibleLimit=9;render();$("explorar").scrollIntoView({behavior:"smooth"})}));
+document.querySelectorAll("[data-guide]").forEach(b=>b.addEventListener("click",()=>{const key=b.dataset.guide;const map={navidad:"Navidad",pascua:"Pascua",halloween:"Halloween"};$("search").value=map[key];$("monthFilter").value="";$("categoryFilter").value="";selectedRegion="";document.querySelectorAll(".chip").forEach(c=>c.classList.toggle("active",!c.dataset.region));visibleLimit=100;render();$("explorar").scrollIntoView({behavior:"smooth"})}));
+$("nextBtn").addEventListener("click",()=>{const e=events.filter(x=>x.date>=today).sort((a,b)=>a.date-b.date)[0];if(e)openDetails(e.id)});
+$("nextFeature").addEventListener("click",e=>{if(e.currentTarget.dataset.details)openDetails(e.currentTarget.dataset.details)});
+$("closeModal").addEventListener("click",closeModal);$("modalBackdrop").addEventListener("click",e=>{if(e.target===$("modalBackdrop"))closeModal()});document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal()});
+$("addCalendarBtn").addEventListener("click",()=>{if(selectedEvent)downloadICS(selectedEvent)});
+async function sharePage(){try{if(navigator.share)await navigator.share({title:"FiestaMundo",text:"Descubre fiestas y fechas especiales de todo el mundo.",url:location.href});else{await navigator.clipboard.writeText(location.href);showToast("Enlace copiado al portapapeles")}}catch(e){if(e.name!=="AbortError")showToast("Puedes copiar el enlace desde la barra del navegador")}}
+$("shareBtn").addEventListener("click",sharePage);$("copyLinkBtn").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(location.href);showToast("Enlace copiado al portapapeles")}catch(e){showToast("Copia la dirección desde la barra del navegador")}});
+$("shareEventBtn").addEventListener("click",async()=>{if(!selectedEvent)return;const text=`${selectedEvent.emoji} ${selectedEvent.name} — ${fmtDate(selectedEvent.date,{day:"numeric",month:"long",year:"numeric"})}\n${selectedEvent.description}`;try{if(navigator.share)await navigator.share({title:selectedEvent.name,text,url:location.href});else{await navigator.clipboard.writeText(text+"\n"+location.href);showToast("Datos de la fiesta copiados")}}catch(e){if(e.name!=="AbortError")showToast("No se pudo compartir en este dispositivo")}});
+$("topLink").addEventListener("click",e=>{e.preventDefault();window.scrollTo({top:0,behavior:"smooth"})});
+renderUpcoming();render();
+</script>
+</body>
+</html>
